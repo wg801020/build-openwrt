@@ -29,8 +29,8 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-passwall
-#svn co https://github.com/xiaorouji/openwrt-passwall/tree/main/luci-app-passwall package/luci-app-passwall
-
+ svn co https://github.com/xiaorouji/openwrt-passwalll luci/luci-app-passwall
+ svn co https://github.com/xiaorouji/openwrt-passwalll packages/passwall
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
